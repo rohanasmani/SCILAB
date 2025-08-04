@@ -16,6 +16,35 @@ b=coeff(p) // to find coefficient of polynomial
 c=horner(p,[1 2 5]) // to determine the value of p at 1,2 & 5
 d=derivate(p) //finding derivation of polynomial p
 
+// Scilab script files
+
+//Display of two given matrix A and B
+A=[24;59]
+B=[31;65]
+s=A+B   //summation of two matrix
+disp(s)
+m=A*B  //multiplication of two matrix
+disp(m)
+
+//display product of a matrix A and inverse of A. A = [1; 1; 1;-1] 
+A = [1; 1; 1; -1]; // 4x1 matrix (not square)
+if size(A,1) == size(A,2) then   //check the size of matrix
+    result = A * inv(A)
+    disp(result)
+else
+    disp("Matrix is not square, inverse not possible")
+end
+
+//to check if a given number n is less than or equal to 10, if yes, display its square.
+n=input("Enter value of n")
+if (n<10) | (n==10) | then
+   disp(n^2)
+else
+   disp("Number is greater than 10")
+ end
+
+
+
 
 
 
