@@ -1,1 +1,10 @@
+// Function Files in SCILAB
+
+//calculate sum and product of two given matrix A and B
+function[x,y]=sum(A,B)
+x=A+B
+y=A*B
+endfunction
+
+
 
