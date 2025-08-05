@@ -1,5 +1,5 @@
-//Finding Fibonacci sequence of first 10 numbers
-
+###Finding Fibonacci sequence of first 10 numbers
+```scilab
 function[a]=fibo(c)
     x=0
     y=1
@@ -13,3 +13,4 @@ function[a]=fibo(c)
     end
 endfunction
 fibo(10)
+```
