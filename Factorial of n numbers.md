@@ -1,5 +1,5 @@
 ### User defined function for finding the factorial of the first n numbers
-
+```scilab
 function[q]=fact(b)
     a=1
     q=[]
@@ -10,3 +10,4 @@ function[q]=fact(b)
 endfunction
 y=fact(5)
 disp(y)
+```
