@@ -12,9 +12,8 @@ y1=zeros(1,length(n));
 y2=y1; 
 y1(find((n>=min(n1))&(n<=max(n1))))=x1; 
 y2(find((n>=min(n2))&(n<=max(n2))))=x2; 
-y=y1+y2; 
-x=y1.*y2; 
-// Addition of Two Sequences // 
+y=y1+y2;  // Addition of Two Sequences
+x=y1.*y2; //Multiplication of Two Sequences
 scf(); 
 subplot(311); 
 bar(n,y1,0.1,'red'); 
@@ -28,7 +27,6 @@ xlabel("Index", "fontsize", 2,"color", "blue",'position',[0.3 0.3]);
 ylabel("Amplitude", "fontsize", 2, "color", "blue"); 
 subplot(313) 
 bar(n,y,0.1,'Green'); 
-//plot(n,y,'cya+','marker','d','markerfac','red','markeredg','yel'); 
 title('Addition of Sequences','color','red','fontsize', 4); 
 xlabel("Index", "fontsize", 2,"color", "blue",'position',[0.3 0.3]); 
 ylabel("Amplitude", "fontsize", 2, "color", "blue"); 
