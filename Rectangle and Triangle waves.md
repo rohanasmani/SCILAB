@@ -1,4 +1,4 @@
-###Rectangle Wave
+### Rectangle Wave
 ```scilab
 N=input("Enter N:")
  x=-N-10:N+10
@@ -12,7 +12,7 @@ N=input("Enter N:")
 plot2d2(x,y1)
 ```
 
-###Triangle Wave
+### Triangle Wave
 ```scilab
 N = 7;
 n = -15:15;
