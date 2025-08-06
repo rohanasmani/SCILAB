@@ -130,7 +130,3 @@ t=1:n
 plot2d3(t,X)
 ```
 
-
-xlabel("Index", "fontsize", 2,"color", "blue",'position',[0.3 0.3]); 
-ylabel("Amplitude", "fontsize", 2, "color", "blue"); 
-
