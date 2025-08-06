@@ -65,3 +65,41 @@ ylabel("Amplitude", "fontsize", 2, "color", "blue");
 subplot(2,1,2); 
 bar(n3,x3,0.1,'green');
 ```
+
+### Signal Shifting
+```scilab
+x=input("Enter the Sequence :");  
+factor=input("Enter the Shifting Factor :");  
+a=[]; 
+t=[]; 
+for i=1:length(x) 
+  t=[t (i-factor)]; 
+  a=[a x2(i)]; 
+end 
+temp=[]; 
+if(factor>0) 
+ a=[a zeros(1,factor)]; 
+ for j=1:factor 
+   temp=[temp t(length(t))+j]; 
+ end 
+ t=[t temp]; 
+end 
+if(factor<0) 
+ a=[zeros(1,-factor) a]; 
+ for j=1:-factor 
+   temp=[temp j]; 
+ end 
+ t=[temp t]; 
+end  
+subplot(2,1,1); 
+bar(x,0.1,'red'); 
+title('Original Sequence','color','red','fontsize', 4); 
+xlabel("Index", "fontsize", 2,"color", "blue",'position',[0.3 0.3]); 
+ylabel("Amplitude", "fontsize", 2, "color", "blue"); 
+title('Original Sequence'); 
+subplot(2,1,2); 
+bar(t,a,0.1,'green'); 
+title('Shfted Sequence','color','red','fontsize', 4); 
+xlabel("Index", "fontsize", 2,"color", "blue",'position',[0.3 0.3]); 
+ylabel("Amplitude", "fontsize", 2, "color", "blue"); 
+
