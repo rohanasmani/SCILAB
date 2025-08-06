@@ -97,9 +97,40 @@ title('Original Sequence','color','red','fontsize', 4);
 xlabel("Index", "fontsize", 2,"color", "blue",'position',[0.3 0.3]); 
 ylabel("Amplitude", "fontsize", 2, "color", "blue"); 
 title('Original Sequence'); 
-subplot(2,1,2); 
-bar(t,a,0.1,'green'); 
-title('Shfted Sequence','color','red','fontsize', 4); 
+subplot(2,1,2);
+```
+
+### x(n)=2δ(n+2)-δ(n-4), -5<=n<=5.
+```scilab
+function [A]=Imp(n)
+for i=1:length(n)
+if n(i) == 0
+A(i)=1
+else
+A(i)=0
+end
+end
+endfunction
+n= -5:5
+xn= 2*Imp(n+2) - Imp(n-4)
+bar(n,xn)
+```
+
+### x(n)=n[u(n)-u(n-10)+exp(-0.3(n-10))[u(n-10)-u(n-20)] , 0<=n<=20
+```scilab
+X=[]
+for i=1:10
+    X(i)=i
+end
+for i=11:20
+    X(i)=i*exp(-0.3*(i-10))
+end
+n=length(X)
+t=1:n
+plot2d3(t,X)
+```
+
+
 xlabel("Index", "fontsize", 2,"color", "blue",'position',[0.3 0.3]); 
 ylabel("Amplitude", "fontsize", 2, "color", "blue"); 
 
