@@ -1,0 +1,2 @@
+###Square Wave 
+```scilab
