@@ -6,6 +6,6 @@ This repository includes Scilab codes for:
 
 🔁 Discrete-Time Signal operations (scaling, shifting, folding)
 
-🧮 Convolution and correlation
+🧮 DTFT & DFT 
 
-📊 Fourier Transform (DFT/FFT)
+📊 Fourier Transform & Convolution
